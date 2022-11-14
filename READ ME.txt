@@ -1,0 +1,8 @@
+ACCOUNTS:
+
+1. ADMIN
+username: admin@gmail.com
+password: admin123
+2. GUEST
+username: darrenlionardo@gmail.com
+password: 123

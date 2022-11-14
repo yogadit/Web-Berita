@@ -1,0 +1,171 @@
+.overlay{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.cardBox{
+  transition: 0.25s;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.cardBox:hover{
+  transform: scale(1.05);
+}
+
+.news-header{
+  padding: 5%;
+  background-image: linear-gradient(to top, rgba(138, 138, 138, 0), rgba(138,138,138,1));
+  width: 100%;
+  height: 100px;
+}
+
+.news-header-title{
+  text-align: center;
+}
+
+.newsTitle{
+  text-align: center;
+}
+
+.newsContent{
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.newsComment{
+  text-align: center;
+}
+
+.like-btn{
+  transition: 0.25s;
+}
+
+.like-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px 0 grey;
+}
+
+.liked-btn{
+  transition: 0.25s;
+}
+
+.liked-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 4px 0 grey;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px){
+  .width-comment{
+    width: 50%;
+  }
+  .captchaText{
+    user-select: none;
+    font-family: "Brush Script MT", cursive;
+    font-size: 40px;
+    text-align: center;
+  }
+  .tableText{
+    font-size: 15px;
+  }
+  .slideText2{
+    margin-bottom: 3rem;
+  }
+  .formBox{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .width-comment{
+    width: 100%;
+  }
+  .captchaText{
+    user-select: none;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+  .tableText{
+    font-size: 7px;
+  }
+  .slideText{
+    font-size: 15px;
+  }
+  .slideText2{
+    margin-bottom: 2rem;
+  }
+  .buttonText{
+    font-size: 10px;
+  }
+  .formBox{
+    width: 100%;
+  }
+}
+
+.spend{
+  width: 100%;
+  height: 50px;
+  transition: 0.6s;
+}
+
+.spend-inner{
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+  position: relative;
+  text-align: center;
+}
+
+.spend-front, .spend-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.spend-front{
+  background-color: transparent;
+  color: black;
+}
+
+.spend-back{
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.spend:hover .spend-inner{
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 1200px;
+}
+
+.spend:hover{
+  width: 100%;
+  height: 1200px;
+}
+
+.footerPage{
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0 8px 8px 4px black;
+}
